@@ -1,5 +1,7 @@
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 import DashboardCard from "@/components/dashboard/DashboardCard";
 import Navbar from "@/components/Navbar";
+import PostsTable from "@/components/posts/PostsTable";
 import { Newspaper } from "lucide-react";
 import Image from "next/image";
 
@@ -13,6 +15,8 @@ export default function Home() {
           icon={<Newspaper className="text-slate-500" size={72} />} 
         />
       </div>
+      <AnalyticsChart />
+      <PostsTable />
     </>
   );
 }
